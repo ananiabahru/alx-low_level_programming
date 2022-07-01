@@ -1,22 +1,23 @@
 #include <stdio.h>
 /**
-* main - entry block
+* main - Entry point
 *
-* Return: 0
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-int i, j, k;
-for (i = '0'; i <= '9'; i++)
+int d, p, q;
+for (d = '0'; d < '9'; d++)
 {
-for (j = i + 1; j <= '9'; j++)
+for (p = d + 1; p <= '9'; p++)
 {
-for (k = j + 1; k <= '9'; k++)
+for (q = p + 1; q <= '9'; q++)
+if ((p != d) != q)
 {
-putchar(i);
-putchar(j);
-putchar(k);
-if (i != '7'  j != '8'  k != '9')
+putchar(d);
+putchar(p);
+putchar(q);
+if (d == '7' && p == '8')
 {
 putchar(',');
 putchar(' ');
