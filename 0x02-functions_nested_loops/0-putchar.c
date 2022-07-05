@@ -1,7 +1,6 @@
 #include "main.h"
 /**
-* main - description 
-* description: Write a program that prints _putchar, followed by a new line
+* main - prints putchar followd by newline 
 * Return: Always 0
 */
 int main(void)
