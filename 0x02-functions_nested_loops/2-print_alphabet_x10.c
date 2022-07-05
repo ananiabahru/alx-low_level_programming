@@ -1,4 +1,5 @@
-#includ "main.h"
+#include <unistd.h>
+#include "main.h"
 
 /**
 * print_alphabet_x10 -> 10 times followed by a new line.
