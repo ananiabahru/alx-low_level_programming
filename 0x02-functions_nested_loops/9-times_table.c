@@ -7,8 +7,10 @@
 */
 void times_table(void)
 {
-int i, m, n;
+int i, n, m;
 for (i = 0; i <= 9; i++)
+{
+for (m = 0; m <= 9; m++)
 {
 n = i * m;
 if ((n / 10) == 0)
@@ -33,4 +35,4 @@ _putchar(' ');
 }
 _putchar('\n');
 }
-
+}
