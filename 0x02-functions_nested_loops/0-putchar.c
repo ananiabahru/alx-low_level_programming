@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include "main.h"
 /**
-* main - prints_putchar using the function called main 
+* main - Print _putchar using the function called main
 * Description: It prints the word Holberton, followed by a new line.
 * Return: Always 0
 */
