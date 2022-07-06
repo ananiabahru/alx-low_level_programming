@@ -1,17 +1,24 @@
+#include <unistd.h>
 #include "main.h"
 /**
-* print_last_digit - Check Holberton
-* @r: An integer input
-* Description: This function prints the last digit of a number
-* Return: last digit of number r
+* jack_bauer - Check the description
+* Description: Function that prints every minute of
+* the day of Jack Bauer, starting from 00:00 to 23:59.
+* Return: Nothing.
 */
-int print_last_digit(int r)
+void jack_bauer(void)
 {
-int n;
-if (r < 0)
-n = -1 * (r % 10);
-else
-n = r % 10;
-_putchar((n % 10) + '0');
-return (n % 10);
+int hours, minutes;
+for (hours = 0; hours < 24; hours++)
+{
+for (minutes = 0; minutes < 60; minutes++)
+{
+_putchar((hours / 10) + '0');
+_putchar((hours % 10) + '0');
+_putchar(':');
+_putchar((minutes / 10) + '0');
+_putchar((minutes % 10) + '0');
+_putchar('\n');
+}
+}
 }
