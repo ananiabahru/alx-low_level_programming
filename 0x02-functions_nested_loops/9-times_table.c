@@ -7,16 +7,16 @@
 */
 void times_table(void)
 {
-int i, j, n;
+int i, m, n;
 for (i = 0; i <= 9; i++)
 {
-n = i * j;
+n = i * m;
 if ((n / 10) == 0)
 {
-if (j != 0)
+if (m != 0)
 _putchar(' ');
 _putchar(n + '0');
-if (j == 9)
+if (m == 9)
 continue;
 _putchar(',');
 _putchar(' ');
@@ -25,7 +25,7 @@ else
 {
 _putchar((n / 10) + '0');
 _putchar((n % 10) + '0');
-if (j == 9)
+if (m == 9)
 continue;
 _putchar(',');
 _putchar(' ');
