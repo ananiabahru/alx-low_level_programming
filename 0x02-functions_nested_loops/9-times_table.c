@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 /**
 * times_table - Check the code
