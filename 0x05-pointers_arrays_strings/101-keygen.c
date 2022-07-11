@@ -8,15 +8,28 @@
 */
 int main(void)
 {
-int pass, sum;
-srand(time(NUMB));
-sum = 0;
-while (sum <= 2645)
+int main(void)
 {
-pass = (rand() % 128);
-sum += pass;
-printf("%c", pass);
+int sum = 2772;
+int n;
+srand(time(0));
+while (sum)
+{
+n = rand() % 100;
+if (n <= 94)
+n += 32;
+else
+continue;
+if (sum - n == 0)
+{
+sum -= n;
+printf("%c", n);
 }
-printf("%c", 2772 - sum);
+else if (sum - n - 32 > 0)
+}
+sum -= n;
+printf("%c", n);
+}
+}
 return (0);
 }
