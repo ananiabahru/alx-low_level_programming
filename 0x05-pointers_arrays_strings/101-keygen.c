@@ -8,8 +8,6 @@
 */
 int main(void)
 {
-int main(void)
-{
 int sum = 2772;
 int n;
 srand(time(0));
