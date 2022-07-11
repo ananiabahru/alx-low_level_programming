@@ -12,9 +12,9 @@ int signal = 1;
 
 for (i = 0; s[i] != '\0'; ++i)
 {
-if(i[s] == '-')
+if (i[s] == '-')
 {
-signal*= -1;
+signal *= -1;
 }
 if (i[s] >= '0' && i[s] <= '9')
 {
@@ -25,5 +25,5 @@ else
 break;
 }
 }
-return (res* signal);
+return (res * signal);
 }
