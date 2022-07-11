@@ -3,13 +3,15 @@
 #include <time.h>
 /**
 * main -> generates random valid passwords
-* 
-* Return: 0 (on success).
+* passwords for the program 101-crackme
+*
+* Return: 0 (success)
 */
 int main(void)
 {
 int sum = 2772;
 int n;
+
 srand(time(0));
 while (sum)
 {
@@ -24,7 +26,7 @@ sum -= n;
 printf("%c", n);
 }
 else if (sum - n - 32 > 0)
-}
+{
 sum -= n;
 printf("%c", n);
 }
