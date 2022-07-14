@@ -10,7 +10,7 @@ int *p, i aux, j;
 p = a;
 for (i = 0; i < n; i++)
 p++;
-for (j = 0; j < n / 2; j++)
+for (j = 0; j < i / 2; j++)
 {
 aux = a[j];
 a[j] = *p;
