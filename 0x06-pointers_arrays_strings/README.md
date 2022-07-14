@@ -7,8 +7,8 @@
 5 Always look up
 6 Capitalize on what comes
 7 Mozart composed
-8 
-9
-10
-11
-12
+8 rot13 
+9 Numbers have life
+10 through magic
+11 romantic character
+12 Noise is a buffer
