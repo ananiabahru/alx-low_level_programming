@@ -1,43 +1,23 @@
 #include <stdio.h>
-#include "main.h"
-/**
-* print_number - prints an integer
-* @n: number to be printed
-* Return: Always 0 (Success)
-*/
-void print_number(int n)
+
+int main(void)
 {
-int power, neg, hold;
-neg = 0;
-power = 1;
-hold = n;
-if (n < 0)
-{
-_putchar('-');
-neg = 1;
-}
-while (hold > 9 || hold < -9)
-{
-power *= 10;
-hold /= 10;
-}
-while (power > 0)
-{
-if (power > 9)
-{
-if (!neg)
-_putchar((n / power % 10) + '0');
-else
-_putchar((n / power % 10) * -1 + '0');
-power /= 10;
-}
-if (power == 1)
-{
-if (neg)
-_putchar((n % 10) * -1 + '0');
-else
-_putchar(n % 10 + '0');
-power = 0;
-}
-}
+  int n;
+  int a[5];
+  int *p;
+
+  a[2] = 1024;
+  p = &n;
+  /*
+   * write your line of code here...
+   * Remember:
+   * - you are not allowed to use a
+   * - you are not allowed to modify p
+   * - only one statement
+   * - you are not allowed to code anything else than this line of code
+   */
+  ;
+  /* ...so that this prints 98\n */
+  printf("a[2] = %d\n", a[2]);
+  return (0);
 }
