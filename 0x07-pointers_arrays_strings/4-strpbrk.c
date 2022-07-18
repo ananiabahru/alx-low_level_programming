@@ -15,7 +15,7 @@ while (accept[j])
 {
 if (s[i] == accept[b])
 {
-s += a;
+s += i;
 return (s);
 }
 j++;
