@@ -1,4 +1,4 @@
-this is a readme file for the project of Even more pointers, arrays and strings 
+#this is a readme file for the project of Even more pointers, arrays and strings 
 task 0
 task 1
 task 2
