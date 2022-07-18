@@ -1,9 +1,9 @@
-#include"main.h"
+#include "main.h"
 /**
 * _strchr -> function that locates a character in a string.
 * @s: string given
-* @c: another character
-* Return: a string
+* @c: to find character
+* Return: string from found character
 */
 char *_strchr(char *s, char c)
 {
