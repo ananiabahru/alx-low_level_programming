@@ -13,7 +13,7 @@ while (s[i])
 j = 0;
 while (accept[j])
 {
-if (s[i] == accept[b])
+if (s[i] == accept[j])
 {
 s += i;
 return (s);
