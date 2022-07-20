@@ -14,4 +14,6 @@ int _sqrt(int n, int i);
 int check_prime(int n, int i);
 int _strlen_recursion(char *s);
 int Palindrome_Rsv(char *s, int i, int j);
+int substring_match(char *s1, char *s2, char *after_wldcd);
+int wildcmp(char *s1, char *s2);
 #endif
