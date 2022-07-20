@@ -7,10 +7,10 @@
 int is_palindrome(char *s)
 {
 int len;
-len = _strlen_recurtion(s);
+len = _strlen_recursion(s);
 if (len == 0 || *s != s[len - 1])
 return (0);
-return (palindrome_Rsv(s, 0, len - 1));
+return (Palindrome_Rsv(s, 0, len - 1));
 }
 
 /**
