@@ -38,7 +38,6 @@ j++;
 }
 h++;
 }
-printf("%s\n", s);
 s[h] = '\0';
 return (s); 
 }
