@@ -7,22 +7,19 @@
 */
 char *_strdup(char *str)
 {
-int i = 1;
-int j = 0;
-char *s;
-
+int i = 0, size = 0;
+char *k;
 if (str == NULL)
 return (NULL);
-while (str[i])
-i++;
-s = (char *)malloc(i *sizeof(char) + 1);
-if (s == NULL)
+for (; str[size] != '\0'; size++);
+/*+1 on the size puts the end of string character*/
+k = malloc(size * sizeof(*str) + 1);
+if (k == 0)
 return (NULL);
-while (j < i)
-s[j] = str[j];
-j++;
-s[j] = '\0';
+else
 {
-return (s);
+for (; i < size; i++)
+k[i] = str[i];
 }
+return (k);
 }
