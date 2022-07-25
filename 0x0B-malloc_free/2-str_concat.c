@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* _strconcat -> function that concatenates two strings.
+* str_concat -> function that concatenates two strings.
 * @s1: string 1
 * @s2: string 2
 * Return: string 1 + string 2
@@ -22,20 +22,22 @@ while (s1[i])
 i++;
 while (s2[j])
 j++;
-len =i + j;
-s = (char *)malloc(len * sizeof(char) + 1);
+len = i + j;
+s = (char *)malloc(len *sizeof(char) + 1);
+if (s == NULL)
+return (NULL);
 j = 0;
 while (h < len)
 {
-if (h <= i)
+if (h < i)
 s[h] = s1[h];
-if (h > i)
+if (h >= i)
 {
 s[h] = s2[j];
 j++;
 }
 h++;
 }
-s[h] = '\n';
+s[h] = '\0';
 return (s);
 }
