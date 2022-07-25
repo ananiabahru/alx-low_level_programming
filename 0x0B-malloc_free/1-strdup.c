@@ -18,12 +18,14 @@ i++;
 s = (char *)malloc(i *sizeof(char) + 1);
 if (s == NULL)
 return (NULL);
-while (j < i)
 {
+while (j < i)
 s[j] = str[j];
 j++;
-}
 s[j] = '\0';
+}
 
+{
 return (s);
+}
 }
