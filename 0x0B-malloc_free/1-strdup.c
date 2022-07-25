@@ -2,13 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* _strdup -> function that returns a pointer to a newly allocated 
+* _strdup -> function that returns a pointer to a newly allocated
 * @str: string to duplicate
 * Return: a string pointer
 */
 char *_strdup(char *str)
 {
-int i = 1; 
+int i = 1;
 int j = 0;
 char *s;
 
