@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 /**
 * _strdup -> function that returns a pointer to a newly allocated
 * @str: string to duplicate
@@ -25,5 +24,6 @@ s[j] = str[j];
 j++;
 }
 s[j] = '\0';
-return  (%s '\n');
+
+return (s);
 }
