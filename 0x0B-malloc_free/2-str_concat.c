@@ -39,5 +39,4 @@ j++;
 h++;
 }
 s[h] = '\0';
-return (s);
-}
+return (s); }
