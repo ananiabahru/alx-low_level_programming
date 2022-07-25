@@ -25,5 +25,5 @@ s[j] = str[j];
 j++;
 }
 s[j] = '\0';
-return ('\n', s);
+return  (%s '\n');
 }
