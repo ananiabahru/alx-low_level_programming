@@ -30,4 +30,4 @@ tab[i][j] = 0;
 
 }
 return (tab);
-}
+}//
