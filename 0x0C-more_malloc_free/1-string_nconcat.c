@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stddef.h>
+
 /**
 * string_nconcat-> function that concatenates two strings.
 * @s1: param 1
@@ -24,10 +24,10 @@ if (concat == NULL)
 return (NULL);
 length = 0;
 for (index = 0; s1[index]; index++)
-concat[length++] = s1[index]
+concat[length++] = s1[index];
 for (index = 0; s2[index] && index < n; index++)
+
 concat[length++] = s2[index];
 concat[length] = '\0';
 return (concat);
 }
-
