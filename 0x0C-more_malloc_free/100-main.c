@@ -8,7 +8,7 @@
 * @size: the size of the memory to print
 * Return: Nothing.
 */
-void simple_print_buffer(int *buffer, unsigned int size)
+void simple_print_buffer(char *buffer, unsigned int size)
 {
 unsigned int i;
 i = 0;
@@ -17,7 +17,6 @@ while (i < size)
 if (i % 10)
 {
 printf(" ");
-}
 if (!(i % 10) && i)
 {
 printf("\n");
@@ -27,16 +26,22 @@ i++;
 }
 printf("\n");
 }
-
 /**
-* main - check the code
+* main - check the code for
 * Return: Always 0.
 */
 int main(void)
 {
-int *a;
-a = array_range(0, 10);
-simple_print_buffer(a, 11);
-free(a);
+char *p;
+int i;
+p = malloc(sizeof(char) * 10);
+p = _realloc(p, sizeof(char) * 10, sizeof(char) * 98);
+i = 0;
+while (i < 98)
+{
+p[i++] = 98;
+}
+simple_print_buffer(p, 98);
+free(p);
 return (0);
 }
