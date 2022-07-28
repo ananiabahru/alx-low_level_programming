@@ -26,6 +26,8 @@ i++;
 }
 printf("\n");
 }
+}
+
 /**
 * main - check the code for
 * Return: Always 0.
@@ -44,4 +46,6 @@ p[i++] = 98;
 simple_print_buffer(p, 98);
 free(p);
 return (0);
+
 }
+
