@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 char *opc = (char *)main;
-int i, abytes;
+int j, abytes;
 if (argc != 2)
 {
 printf("Error\n");
